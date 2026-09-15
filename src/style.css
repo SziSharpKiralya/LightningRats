@@ -8,7 +8,60 @@ body {
   width: 100%;
 }
 
+body {
+  background-color:slategrey;
+}
+
 form {
   display: flex;
   flex-direction: column;
+
+  label {
+    margin-bottom: 10px;;
+  }
+
+  input {
+    margin-bottom: 10px;
+    height: 2rem;
+
+    &[type="submit"] {
+      border-radius: 12px;
+      background-color:gainsboro;
+      transition: ease-in 0.3s;
+      border: none;
+    }
+
+    &[type="submit"]:hover {
+      filter: brightness(1.3);
+    }
+  }
+}
+
+h2, p {
+  text-align: center;
+}
+
+#APP {
+  width: 300px;
+  min-height: 200px;
+  background-color: antiquewhite;
+  border-radius: 12px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+#CARDS {
+  display: grid;
+  grid-template-columns: 33% 34% 33%;
+  grid-gap: 15px;
+  width: 1000px;
+  max-height: 144px;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  div {
+    padding: 10px;
+    border-radius: 12px;
+    background-color: antiquewhite;
+  }
 }
